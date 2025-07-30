@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-family: sans-serif;
+}
+
+.corner-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: auto;
+  z-index: 1001;
+}
+
+.support-button {
+  position: fixed;
+  bottom: 250px;
+  left: 20px;
+  width: 100px;
+  height: 100px;
+  
+  cursor: pointer;
+}
+
+.support-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 100px;
+  left: 20px;
+  width: 120px;
+  height: 120px;
+  z-index: 1001;
+  cursor: pointer;
+}
+
+.whatsapp-button img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-button:hover img {
+  transform: scale(1.1);
+}
+
+
+
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.card-wrapper {
+  margin-top: 100px;
+  position: relative;
+  width: 420px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card-3d {
+  position: absolute;
+  width: 300px;
+  top: 0;
+  transition: transform 0.5s ease, left 0.5s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card1 {
+  left: 0;
+}
+
+.card2 {
+  left: 0;
+}
+
+.btn {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 6px;
+  z-index: 1000;
+}
+
+.left-btn {
+  left: 20px;
+}
+
+.right-btn {
+  right: 20px;
+}
+
